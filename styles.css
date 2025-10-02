@@ -1,0 +1,63 @@
+* {
+    cursor: url('assets/icons8-pixel-heart-30.png'), auto !important;
+}
+
+body {
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Monotype Corsiva', cursive;
+    text-shadow: 0.25rem 0.25rem 0.5rem #bbc7eb;
+    margin-bottom: -5rem;
+}
+
+h2 {
+    font-family: 'Monotype Corsiva', cursive;
+    text-shadow: 0.25rem 0.25rem 1rem #8d9cca;
+}
+
+
+
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  display: inline-block;
+  background-color: #F97316; 
+  color: white;
+  border-radius: 9999px; 
+  transition: background-color 0.3s; 
+  font-size: clamp(0.875rem, 2.5vw, 1rem); 
+  padding: clamp(0.5rem, 3vw, 0.75rem) clamp(1rem, 5vw, 1.5rem); 
+}
+
+.button:hover {
+  background-color: #9A3412; 
+}
+
+.float-in-text {
+  /* [animation-name] [duration] [timing-function] [fill-mode] */
+  animation: floatIn           1.2s     ease-out          forwards;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start 20 pixels down */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at its natural position */
+  }
+}
