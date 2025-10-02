@@ -6,15 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<main>
-        <section class="text-center">
-            <h1 class="text-4xl font-bold mt-20 mb-10">i love bread !</h1>
-            <img src="assets/bread.png" alt="bread" style="width: 50%; height:auto; margin-bottom: 2rem;">
-            <p class="text-lg mb-4">bread is fantastic! bread is yummy! bread is the best! you should try it!</p>
-            <a href="https://genshin.honeyhunterworld.com/hu_tao_1/?lang=EN" class="button">sign me up!</a>
+
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden pt-rem">
+            <div class="absolute inset-0 z-0"></div>
+            <img src="assets/bread.webp"
+                 alt="beautiful sliced japanese milk bread" 
+                 class="absolute inset-0 w-full h-full object-cover saturate-10000 opacity-100">
+            <div class="relative z-1 p-6">
+                <h1 class="float-in-text text-[20vw] text-white font-bold tracking-tight leading-tight">b r e a d </h1>
+                <p class="text-lg mt-[-3vw] mx-auto">i love bread, u love bread... it was loaf at first sight</p>
+                <a href="#newsletter" class="mt-8 inline-block bg-white text-[#8e5e47] py-3 px-8 text-0.5lg max-w-2xl rounded-full hover:bg-[#bbc7eb] transition-colors duration-300 transform hover:scale-105">i gotta try some</a>
+            </div>
         </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="py-20 px-6 lg:px-8 text-[#8e5e47]">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">sign up now pls bbg</h2>
+                <p class="text-lg mb-8">omg say less ofc i'll sign up for u!!!</p>
+                
+                <form id="newsletter-form" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" novalidate>
+                    <label for="email" class="sr-only">email address</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required 
+                           class="w-full px-4 py-3 rounded-full border-2 border-[#bbc7eb] focus:border-[#A97155] focus:ring-0 transition-colors duration-300 shadow-inner"
+                           aria-required="true" aria-label="Email Address for newsletter subscription">
+                    <button type="submit" class="text-[#8e5e47] text-md py-3 px-8 rounded-full bg-[#bbc7eb] hover:bg-[#A97155] hover:text-[#bbc7eb] transition-colors duration-300 shadow-md">subscribe</button>
+                </form>
+            </div>
+        </section>
+
     </main>
 </body>
-</html>
+</html> 
